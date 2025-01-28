@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - BlockTavern</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pages/css/responsive-pages.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="" class="logo-text">BlockTavern</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="pages/wiki.html">Wiki</a></li>
+                <li><a href="pages/download.html">下载</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. 英雄区域 -->
+        <section class="hero">
+            <h1 class="">欢迎来到BlockTavern的世界</h1>
+            <div class="hero-actions">
+                <a href="pages/wiki.html" class="hero-btn wiki-btn">
+                    <i class="fas fa-book"></i>
+                    <span class="">Wiki 指南</span>
+                </a>
+                <a href="pages/download.html" target="_blank" class="hero-btn download-btn">
+                    <i class="fas fa-download"></i>
+                    <span class="">下载客户端</span>
+                </a>
+                <button class="hero-btn ip-btn">
+                    <i class="fas fa-server"></i>
+                    <span class="">加入服务器</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- 2. 最新公告 -->
+        <section class="news-section">
+            <div class="container">
+                <div class="announcements">
+                    <h2 class="gradient-text">最新公告</h2>
+                    <div class="news-card">
+                        <!-- 公告内容将插入到这里 -->
+                    </div>
+                    <a href="pages/announcements.html" class="view-all-btn">查看所有公告</a>
+                </div>
+
+                <div class="updates">
+                    <h2 class="gradient-text">最近更新</h2>
+                    <div class="update-timeline">
+                        <!-- 更新内容将插入到这里 -->
+                    </div>
+                    <a href="pages/updates.html" class="view-all-btn">查看所有更新</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 服务器介绍和特色玩法合并部分 -->
+        <section class="server-features" id="server-info">
+            <div class="section-header ">
+                <h2 class="gradient-text">服务器介绍</h2>
+                <p class="color-text">独特的游戏体验，等你来玩</p>
+            </div>
+
+            <!-- 主要特色卡片 -->
+            <div class="features-container">
+                <div class="features-grid ">
+                    <div class="feature-card gradient-1 ">
+                        <div class="card-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 class="gradient-text">不限生电</h3>
+                        <p class="color-text">提供无限的生存资源，玩家可以自由探索和创造，享受无尽的游戏乐趣。</p>
+                        <ul class="feature-list color-text">
+                            <li><i class="fas fa-check"></i>自由探索</li>
+                            <li><i class="fas fa-check"></i>无限资源获取</li>
+                            <li><i class="fas fa-check"></i>多样化玩法</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card gradient-2">
+                        <div class="card-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3 class="gradient-text">原版特性</h3>
+                        <p class="color-text">保留经典的游戏机制，带给玩家原汁原味的游戏体验，感受最真实的Minecraft世界。</p>
+                        <ul class="feature-list color-text">
+                            <li><i class="fas fa-check"></i>经典玩法</li>
+                            <li><i class="fas fa-check"></i>原版物品</li>
+                            <li><i class="fas fa-check"></i>真实的生存体验</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card gradient-3">
+                        <div class="card-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="gradient-text">建筑大师</h3>
+                        <p class="color-text">鼓励玩家发挥创意，建造独特的建筑，参与建筑比赛，展示你的建筑才能。</p>
+                        <ul class="feature-list color-text">
+                            <li><i class="fas fa-check"></i>创意建筑</li>
+                            <li><i class="fas fa-check"></i>建筑比赛</li>
+                            <li><i class="fas fa-check"></i>建筑评分系统</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlights-section">
+                    <div class="highlight-content">
+
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4 class="gradient-text">高性能服务器</h4>
+                                <p class="color-text">采用顶级硬件配置，确保流畅游戏体验</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4 class="gradient-text">安全保障</h4>
+                                <p class="color-text">完善的防作弊系统，保护玩家权益</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="highlight-text">
+                                <h4 class="gradient-text">活跃社区</h4>
+                                <p class="color-text">友好的玩家社区，精彩活动不断</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="highlight-image" id="active-img2">
+                        <div class="slider-wrapper">
+                            <img src="https://t.mwm.moe/pc" alt="服务器风景1" class="slider-image">
+                            <img src="https://t.mwm.moe/pc" alt="服务器风景2" class="slider-image">
+                            <img src="https://t.mwm.moe/pc" alt="服务器风景3" class="slider-image">
+                            <img src="https://t.mwm.moe/pc" alt="服务器风景4" class="slider-image">
+                            <img src="https://t.mwm.moe/pc" alt="服务器风景5" class="slider-image">
+                        </div>
+                        <button class="slider-btn prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>BlockTavern 是一个充满创意与欢乐的我的世界服务器</p>
+                <div class="social-links">
+                    <a href="https://qm.qq.com/q/R2b6LRaRua" target="_blank" class="social-link"><i
+                            class="fab fa-qq"></i></a>
+                    <a href="https://discord.gg/PdjQyJzCgP" target="_blank" class="social-link"><i
+                            class="fab fa-discord"></i></a>
+                    <a href="#" class="social-link qr-trigger">
+                        <i class="fas fa-qrcode"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>赞助伙伴</h4>
+                <ul>
+                    <li><a href="#">商业户</a></li>
+                    <li><a href="#">个体户</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>合作伙伴</h4>
+                <ul>
+                    <li><a href="https://awafuns.cn/">科技工具X</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>友情链接</h4>
+                <ul>
+                    <li><a href="https://www.idc35.com/">天霆网络</a></li>
+                    <li><a href="https://www.tanggaoyun.com/aff/RVDLPFWS">糖糕云</a></li>
+                    <li><a href="https://cdnjs.com/">cdnjs</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024-2025 BlockTavern. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 添加二维码弹窗 -->
+    <div class="qr-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>加入我们的社群</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="qr-container">
+                    <a href="https://qm.qq.com/q/R2b6LRaRua"><img src="images/QR/qrcode.png" alt="QQ群二维码"
+                            class="qr-code">
+                    </a>
+                    <p>QQ群：238931059</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="pages/js/home.js"></script>
+    <script src="/configs/announcements-config.js"></script>
+    <script src="/configs/updates-config.js"></script>
+    <script type="module" src="/configs/homepage-content.js"></script>
+</body>
+
+</html>

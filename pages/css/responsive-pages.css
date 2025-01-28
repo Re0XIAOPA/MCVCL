@@ -1,0 +1,379 @@
+/* 通用响应式布局 */
+@media screen and (max-width: 1400px) {
+
+    .announcements-content,
+    .updates-content,
+    .wiki-content,
+    .download-content {
+        max-width: 1140px;
+        padding: 1.5rem;
+    }
+
+    /* 时间轴侧边栏调整 */
+    .time-sidebar {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-bottom: 2rem;
+        order: 1;
+    }
+
+    .time-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+    }
+
+    .time-item {
+        flex: 0 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* 内容区域布局调整 */
+    .announcements-content,
+    .updates-content,
+    .wiki-content,
+    .download-content {
+        margin: auto auto 40px;
+    }
+
+    /* 网格布局调整 */
+    .wiki-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .download-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .tutorial-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* 卡片样式调整 */
+    .announcement-card,
+    .timeline-content,
+    .wiki-card,
+    .download-card {
+        padding: 1.5rem;
+    }
+
+    /* 内容布局调整 */
+    .announcements-content,
+    .updates-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .announcement-filter,
+    .version-filter {
+        order: 2;
+    }
+
+    .announcement-card,
+    .updates-timeline {
+        order: 3;
+    }
+
+    /* 导航栏响应式样式 */
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* 导航栏响应式 */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Wiki页面响应式 */
+    .wiki-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wiki-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* 下载页面响应式 */
+    .download-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .launcher-list {
+        flex-direction: column;
+    }
+
+    .launcher-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .mod-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 公告页面响应式 */
+    .announcement-filter {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filter-btn {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+
+    .announcement-card {
+        margin: 15px 0;
+    }
+
+    /* 更新页面响应式 */
+    .version-filter {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .timeline-item {
+        margin: 15px 0;
+    }
+
+    .update-details {
+        padding: 15px;
+    }
+
+    /* 筛选按钮组调整 */
+    .announcement-filter,
+    .version-filter {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+        flex: 1 1 calc(50% - 0.8rem);
+        min-width: 120px;
+        font-size: 0.9rem;
+    }
+
+    /* 卡片头部调整 */
+    .announcement-header,
+    .update-header,
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    /* 下载按钮组调整 */
+    .download-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .download-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 启动器列表调整 */
+    .launcher-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .launcher-info {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Wiki卡片调整 */
+    .wiki-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wiki-card h3 {
+        font-size: 1.3rem;
+    }
+
+    /* 导航栏响应式样式 */
+    .navbar {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    /* 添加汉堡菜单按钮 */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: none;
+        border: none;
+        color: var(--text-primary);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 100;
+    }
+
+    .menu-toggle:hover {
+        color: var(--primary-color);
+    }
+
+    /* 导航栏展开时的背景 */
+    .nav-links.active {
+        background: var(--bg-card);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nav-links.active li {
+        text-align: center;
+    }
+
+    .nav-links.active a {
+        padding: 0.8rem;
+    }
+
+    .nav-links.active a:hover {
+        background: var(--bg-primary);
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* 标签组调整 */
+    .announcement-tags,
+    .update-tags {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    /* 文本内容调整 */
+    .announcement-content,
+    .update-details {
+        font-size: 0.9rem;
+    }
+
+    /* 时间和版本信息调整 */
+    .announcement-date,
+    .timeline-date,
+    .version {
+        font-size: 0.8rem;
+    }
+
+    /* 特性列表调整 */
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* 模组卡片调整 */
+    .mod-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mod-info {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
+
+/* 横屏模式适配 */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+
+    .announcements-content,
+    .updates-content,
+    .wiki-content,
+    .download-content {
+        margin: 80px auto 30px;
+    }
+
+    .time-sidebar {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+}
+
+/* 平板布局 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Wiki页面 */
+    .wiki-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 下载页面 */
+    .download-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mod-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* 大屏幕优化 */
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

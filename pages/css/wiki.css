@@ -1,0 +1,128 @@
+.wiki-content {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 2rem;
+}
+
+.wiki-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.wiki-header h1 {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.wiki-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.wiki-category {
+    margin-bottom: 3rem;
+}
+
+.wiki-category h2 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.wiki-category h2 i {
+    color: var(--primary-color);
+}
+
+.wiki-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.wiki-card {
+    background: var(--bg-card);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wiki-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.card-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    background: var(--bg-primary);
+    color: var(--primary-color);
+}
+
+.card-tag.essential {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 动画效果 */
+.wiki-card {
+    position: relative;
+}
+
+.wiki-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.wiki-card:hover::after {
+    transform: translateX(100%);
+}

@@ -1,0 +1,361 @@
+.download-content {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 2rem;
+}
+
+.download-section {
+    margin-bottom: 4rem;
+}
+
+.download-section h2 {
+    color: var(--text-primary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+/* 下载卡片样式 */
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.download-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+.download-card.featured {
+    border: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-header i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.card-header h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.version {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    background: var(--bg-primary);
+    border-radius: 50px;
+    margin-left: auto;
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.feature-list li i {
+    color: var(--accent-3);
+}
+
+.download-info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.download-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    transition: all 0.3s ease;
+}
+
+.download-btn.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* 模组卡片样式 */
+.mod-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.mod-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mod-card:hover {
+    transform: translateY(-3px);
+}
+
+.mod-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.mod-info {
+    flex: 1;
+}
+
+.mod-info h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.mod-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.mod-version {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.mod-download {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.mod-download:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 安装教程样式 */
+.tutorial-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.step-content h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* 启动器列表样式 */
+.launcher-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.launcher-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.launcher-item:hover {
+    transform: translateX(5px);
+}
+
+.launcher-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.launcher-info {
+    flex: 1;
+}
+
+.launcher-info h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+}
+
+.launcher-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* 教程卡片网格布局 */
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.tutorial-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tutorial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.tutorial-header i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.tutorial-header h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+    .download-content {
+        padding: 1rem;
+        margin: 10px auto 40px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tutorial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .launcher-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .launcher-info {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-header {
+        flex-wrap: wrap;
+    }
+
+    .version {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .mod-card {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mod-info {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

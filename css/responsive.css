@@ -1,0 +1,324 @@
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .features {
+        padding: 4rem 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .features-grid {
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .feature-card {
+        max-width: 400px;
+    }
+
+    .highlights-section {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    #active-img1 {
+        display: block;
+    }
+
+    #active-img2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .news-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .container {
+        gap: 2rem;
+    }
+
+    .highlights-section {
+        gap: 1.5rem;
+    }
+
+    .highlight-image {
+        height: 300px;
+    }
+
+    .highlight-item {
+        flex-direction: row;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .highlight-icon {
+        margin: 0;
+    }
+
+    .highlight-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .highlight-text p {
+        font-size: 0.9rem;
+    }
+
+    .slider-wrapper {
+        height: 100%;
+    }
+
+    .slider-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .highlight-item {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .highlight-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .highlight-icon i {
+        font-size: 1.5rem;
+    }
+
+    .highlight-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .highlight-text p {
+        font-size: 1rem;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 100%;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .footer-content ul li {
+        width: auto;
+    }
+
+    #active-img1 {
+        display: block;
+    }
+
+    #active-img2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+    /* 服务器亮点部分样式 */
+    .highlights-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .highlight-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .highlight-image {
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .highlight-item {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        padding: 1rem;
+        border-radius: 20px;
+        background: var(--bg-card);
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .highlight-item:hover {
+        transform: translateX(10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .features-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .features-grid {
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .feature-card {
+        max-width: 400px;
+    }
+
+    .highlights-section {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .highlight-content,
+    .highlight-image {
+        width: 50%;
+    }
+
+    .highlight-item {
+        flex: 1;
+    }
+
+    #active-img1 {
+        display: none;
+    }
+
+    #active-img2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .features {
+        padding: 3rem 1.5rem;
+    }
+
+    .features-grid {
+        width: 100%;
+    }
+
+    .announcements h2,
+    .updates h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content ul li {
+        font-size: 0.9rem;
+    }
+
+    .highlight-image {
+        height: 250px;
+    }
+
+    .highlight-item {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+
+    .highlight-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .highlight-icon i {
+        font-size: 1.3rem;
+    }
+
+    .highlight-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .highlight-text p {
+        font-size: 1rem;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 100%;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    #active-img1 {
+        display: block;
+    }
+
+    #active-img2 {
+        display: none;
+    }
+}

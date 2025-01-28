@@ -1,0 +1,246 @@
+.announcements-content {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 2rem;
+}
+
+.announcement-card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.announcement-title {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.announcement-title i {
+    color: var(--primary-color);
+}
+
+.announcement-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.announcement-content {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.announcement-tags {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+.announcement-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: var(--bg-primary);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* 添加时间轴样式 */
+.time-sidebar {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.time-sidebar h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.time-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.time-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.time-item:hover {
+    background: var(--bg-primary);
+}
+
+.time-item.active {
+    background: var(--primary-light);
+    color: white;
+}
+
+.time-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.time-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.time-item.active .time-date {
+    color: white;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 1400px) {
+    .announcements-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .time-sidebar {
+        position: static;
+        transform: none;
+        order: 2;
+        /* 放在筛选按钮下面 */
+        width: 100%;
+    }
+
+    .announcement-filter {
+        order: 1;
+    }
+
+    .announcement-card {
+        order: 3;
+    }
+
+    .time-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+    }
+
+    .time-item {
+        flex: 0 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .announcement-filter {
+        margin-top: 6rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .time-list {
+        justify-content: center;
+    }
+
+    .announcement-filter {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        text-align: center;
+        display: none;
+    }
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+    .announcements-content {
+        padding: 1rem;
+        margin: 100px auto 40px;
+    }
+
+    .announcement-filter {
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .announcement-card {
+        padding: 1.5rem;
+    }
+
+    .announcement-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .announcement-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .announcement-tags {
+        flex-wrap: wrap;
+    }
+}

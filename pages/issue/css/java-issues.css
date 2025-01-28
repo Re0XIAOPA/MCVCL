@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 4rem 0 8rem 0;
+}
+
+.issue-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.issue-content p {
+    font-size: 1.2rem;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.card {
+    background: #ffffff;
+    width: 260px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #7439ff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border-image: linear-gradient(45deg, #8b5cf6, #ec4899) 1;
+    transition: background-color 0.3s, color 0.1s;
+}
+
+.card a:hover {
+    color: #fff;
+    background: linear-gradient(45deg, #ec4899, #8b5cf6);
+    border-image: linear-gradient(45deg, #ec4899, #8b5cf6) 1;
+}
+
+
+
+/* 添加上边距以避免被导航栏遮挡 */
+main {
+    margin-top: 60px;
+    /* 根据导航栏的高度调整 */
+}
+
+/* 渐变文字样式 */
+.gradient-text {
+    background: linear-gradient(180deg, #8b5cf6, #f472b6);
+    /* 使用更深的紫色 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    /* 增加文字粗细 */
+}
+
+.color-text {
+    background: linear-gradient(to right, #8b5cf6, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+}
+
+/* 响应式导航栏 */
+@media screen and (max-width: 768px) {
+    .nav-links li a {
+        display: none;
+    }
+}
